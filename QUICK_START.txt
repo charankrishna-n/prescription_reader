@@ -1,0 +1,177 @@
+# 🚀 RxAssist AI - Quick Start Guide
+
+## ⚡ 5-Minute Setup
+
+### Step 1: Install Backend Dependencies
+```bash
+cd c:\Users\chara\OneDrive\Documents\seai_final
+pip install PyJWT
+```
+
+### Step 2: Start Backend
+```bash
+python api.py
+```
+✅ Backend running on: http://localhost:8000
+
+### Step 3: Install Frontend Dependencies
+```bash
+cd frontend
+npm install
+```
+
+### Step 4: Start Frontend
+```bash
+npm run dev
+```
+✅ Frontend running on: http://localhost:5173
+
+---
+
+## 🔐 Login
+
+### User Account
+- **URL:** http://localhost:5173/login
+- **Email:** test@example.com
+- **Password:** password123
+
+### Doctor Account
+- **URL:** http://localhost:5173/doctor-login
+- **Email:** doctor@example.com
+- **Password:** password123
+
+---
+
+## 📋 What You Can Do
+
+### As a User
+1. ✅ Upload prescription image
+2. ✅ View extracted medicines
+3. ✅ Add medicines to tracker
+4. ✅ Add medicines to calendar
+5. ✅ Translate instructions
+6. ✅ Change language (English/Tamil/Hindi)
+
+### As a Doctor
+1. ✅ View all patients
+2. ✅ Search patients
+3. ✅ Monitor adherence
+4. ✅ Track active medicines
+5. ✅ View patient details
+
+---
+
+## 🎯 Test Flow
+
+### 1. User Flow
+```
+Login → Upload Prescription → View Medicines → Add to Tracker → Logout
+```
+
+### 2. Doctor Flow
+```
+Doctor Login → View Patients → Search → View Details → Logout
+```
+
+---
+
+## 🐛 Troubleshooting
+
+### Backend won't start
+```bash
+# Check if port 8000 is in use
+netstat -ano | findstr :8000
+
+# Kill process if needed
+taskkill /PID <PID> /F
+```
+
+### Frontend won't start
+```bash
+# Clear node_modules and reinstall
+cd frontend
+rm -r node_modules
+npm install
+npm run dev
+```
+
+### Login fails
+- Check backend is running: http://localhost:8000/health
+- Use correct credentials: test@example.com / password123
+- Check browser console for errors
+
+### Prescription upload fails
+- Ensure image is PNG, JPG, or JPEG
+- Check file size is reasonable
+- Verify backend has Gemini API access
+
+---
+
+## 📁 Project Structure
+
+```
+seai_final/
+├── api.py                    # Backend (FastAPI)
+├── requirements.txt          # Python dependencies
+├── RXASSIST_SETUP.md        # Detailed setup guide
+├── RXASSIST_COMPLETE.md     # Complete documentation
+└── frontend/
+    ├── src/
+    │   ├── App.jsx
+    │   ├── main.jsx
+    │   ├── index.css
+    │   ├── components/
+    │   ├── lib/
+    │   └── pages/
+    ├── package.json
+    ├── tailwind.config.js
+    └── vite.config.js
+```
+
+---
+
+## ✨ Features
+
+- ✅ User & Doctor authentication
+- ✅ Prescription image upload
+- ✅ AI-powered medicine extraction
+- ✅ Medicine tracking system
+- ✅ Calendar integration
+- ✅ Multi-language support
+- ✅ Doctor patient monitoring
+- ✅ Adherence tracking
+- ✅ Responsive design
+- ✅ Dark theme UI
+
+---
+
+## 🔗 API Endpoints
+
+| Method | Endpoint | Purpose |
+|--------|----------|---------|
+| POST | /api/auth/login | User login |
+| POST | /api/doctor/login | Doctor login |
+| POST | /predict | Upload prescription |
+| POST | /api/reminders | Add reminder |
+| GET | /api/reminders | Get reminders |
+| PUT | /api/reminders/{id} | Update reminder |
+| DELETE | /api/reminders/{id} | Delete reminder |
+| GET | /health | Health check |
+
+---
+
+## 💡 Tips
+
+1. **Demo Credentials:** Use test@example.com / password123
+2. **Test Images:** Use any prescription image (PNG/JPG)
+3. **Browser DevTools:** Check Network tab for API calls
+4. **Backend Logs:** Watch terminal for processing logs
+5. **Frontend Console:** Check for any JavaScript errors
+
+---
+
+## 🎉 You're All Set!
+
+The application is fully integrated and ready to use. Start both backend and frontend, then login with demo credentials.
+
+**Questions?** Check RXASSIST_SETUP.md or RXASSIST_COMPLETE.md for detailed documentation.

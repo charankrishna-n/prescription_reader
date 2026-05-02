@@ -1,0 +1,146 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Machine Learning Models
+*.h5
+*.pkl
+*.model
+*.pt
+*.pth
+*.onnx
+
+# Test files and outputs
+test_out.txt
+out.txt
+debug.txt
+raw_lines.txt
+lines.txt
+matches.txt
+*.tmp
+*.temp
+
+# Test images and outputs
+test_images/output_*.png
+test_images/processed_*.png
+video_frame_*.jpg
+
+# Documentation (keep only essential)
+# Remove duplicate/old documentation files
+FUTURISTIC_AUTH_*.md
+FUTURISTIC_AUTH_*.txt
+PREMIUM_UI_*.md
+DASHBOARD_UI_*.txt
+FRONTEND_COMPLETE.txt
+IMPLEMENTATION_COMPLETE.txt
+SECURITY_*.txt
+SECURITY_FINAL_*.txt
+IMPROVEMENTS_SUMMARY.txt
+README_IMPROVEMENTS.txt
+README_FINAL.md
+VISUAL_*.txt
+VISUAL_*.md
+PANEL_SHAPE_UPDATE.md
+PROJECT_ANALYSIS_SUMMARY.txt
+PROJECT_COMPLETION_SUMMARY.md
+BEFORE_AFTER_COMPARISON.md
+COMMAND_REFERENCE.md
+COMPLETE_SETUP_GUIDE.md
+CORRECT_SECURITY_SETUP.md
+ENVIRONMENT_SETUP.md
+EXTRACTION_IMPROVEMENTS.md
+FRONTEND_ARCHITECTURE.md
+FRONTEND_COMPLETE.md
+FRONTEND_FILES_MANIFEST.md
+FRONTEND_QUICK_START.txt
+FRONTEND_README.md
+FUTURISTIC_AUTH_DELIVERY.md
+IMPLEMENTATION_GUIDE.txt
+INDEX.md
+INDEX.txt
+QUICK_IMPLEMENTATION_GUIDE.md
+QUICK_REFERENCE.md
+QUICK_REFERENCE.txt
+QUICK_START.md
+START_HERE.md
+TAB_APPLICATION_COMPLETE.md
+TAB_APPLICATION_SETUP.md
+UI_REFINEMENT_SUMMARY.md
+UI_VISUAL_GUIDE.md
+
+# Keep only these documentation files
+!QUICK_START.txt
+!RXASSIST_SETUP.md
+!RXASSIST_COMPLETE.md
+!DELIVERY_SUMMARY.md
+!ARCHITECTURE.md
+!VERIFICATION_CHECKLIST.md
+!README.md
+!TECH_STACK_ALGORITHMS.md
+!TECH_STACK_QUICK_REFERENCE.md
+
+# Misc
+*.log
+*.swp
+.DS_Store
+key.json
+script.js
+styles.css
+verify_*.py
+test_backend.py

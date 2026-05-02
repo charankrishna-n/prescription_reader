@@ -1,0 +1,340 @@
+.calendar-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+.calendar-section,
+.add-section {
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.calendar-section h2,
+.add-section h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header button {
+  background: #0F172A;
+  border: 1px solid #334155;
+  color: #CBD5E1;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.calendar-header button:hover {
+  background: #334155;
+  color: #ffffff;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day-header {
+  text-align: center;
+  font-weight: 600;
+  color: #94A3B8;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  background: #0F172A;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 100px;
+}
+
+.calendar-day.empty {
+  background: transparent;
+  border: none;
+}
+
+.calendar-day.active {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.calendar-day.active:hover {
+  border-color: #6366F1;
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.day-number {
+  font-size: 12px;
+  font-weight: 600;
+  color: #CBD5E1;
+}
+
+.day-medicines {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.medicine-badge {
+  background: #6366F1;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.empty-icon {
+  width: 48px;
+  height: 48px;
+  color: #64748B;
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  color: #94A3B8;
+  font-size: 14px;
+}
+
+.medicines-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.medicine-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0F172A;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s;
+}
+
+.medicine-card:hover {
+  border-color: #6366F1;
+}
+
+.medicine-info h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.medicine-details {
+  font-size: 12px;
+  color: #94A3B8;
+  margin: 0;
+}
+
+.add-btn {
+  background: #6366F1;
+  border: none;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.add-btn:hover:not(:disabled) {
+  background: #4F46E5;
+  transform: scale(1.1);
+}
+
+.add-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.add-btn .icon {
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #7F1D1D;
+  border: 1px solid #991B1B;
+  border-radius: 8px;
+  color: #FCA5A5;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.error-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.calendar-items {
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.calendar-items h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.item-card {
+  display: flex;
+  gap: 16px;
+  background: #0F172A;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.item-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6366F1;
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.item-info h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.item-info p {
+  font-size: 12px;
+  color: #94A3B8;
+  margin: 0;
+}
+
+.delete-btn {
+  background: #EF4444;
+  border: none;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.delete-btn:hover {
+  background: #DC2626;
+  transform: scale(1.1);
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1024px) {
+  .calendar-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar-section,
+  .add-section,
+  .calendar-items {
+    padding: 16px;
+  }
+
+  .calendar-grid {
+    gap: 4px;
+  }
+
+  .calendar-day {
+    min-height: 80px;
+    padding: 6px;
+  }
+}

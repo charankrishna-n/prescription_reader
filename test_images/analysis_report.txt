@@ -1,0 +1,23 @@
+IMAGE ANALYSIS REPORT
+==================================================
+
+Image: test.png
+Original size: 1227x1600
+
+ENHANCED METHOD:
+  Text regions found: 0
+
+BINARY METHOD:
+  Text regions found: 35
+  Average region size: 19x26
+
+ADAPTIVE METHOD:
+  Text regions found: 1
+  Average region size: 12x19
+
+ADAPTIVE_INV METHOD:
+  Text regions found: 3837
+  Average region size: 22x19
+
+OCR RESULT:
+OCR Error: tesseract is not installed or it's not in your PATH. See README file for more information.
