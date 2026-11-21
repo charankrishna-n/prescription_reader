@@ -10,6 +10,7 @@
 - Login with demo credentials
 - Test features
 
+
 ### For Detailed Setup
 👉 **Read:** `RXASSIST_SETUP.md`
 - Complete installation guide
