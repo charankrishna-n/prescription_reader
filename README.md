@@ -3,7 +3,6 @@
 ## 🎯 Start Here
 
 
-
 ### For Quick Setup (5 minutes)
 👉 **Read:** `QUICK_START.txt`
 - Install dependencies
